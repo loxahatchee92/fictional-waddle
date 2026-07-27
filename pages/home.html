@@ -1,2 +1,120 @@
-###
-home
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>My Blog</title> <style>
+  :root {
+    --text: #1a1a1a;
+    --muted: #666;
+    --bg: #fdfdfd;
+    --accent: #2b5797;
+    --border: #e5e5e5;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  header {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 {
+    margin: 0 0 0.25rem;
+    font-size: 2rem;
+  }
+  header p {
+    color: var(--muted);
+    margin: 0;
+  }
+  nav {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 0;
+  }
+  nav a {
+    color: var(--accent);
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-family: system-ui, sans-serif;
+    font-size: 0.95rem;
+  }
+  nav a:hover { text-decoration: underline; }
+  main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem;
+  }
+  .post {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .post:last-child { border-bottom: none; }
+  .post h2 {
+    margin: 0 0 0.25rem;
+    font-size: 1.5rem;
+  }
+  .post h2 a {
+    color: var(--text);
+    text-decoration: none;
+  }
+  .post h2 a:hover { color: var(--accent); }
+  .post-date {
+    font-family: system-ui, sans-serif;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .post p { margin: 0.5rem 0; }
+  footer {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+    color: var(--muted);
+    font-family: system-ui, sans-serif;
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>The story</h1>
+  <p>Last year, Miss Wong reported an ex partner to the police accusing him of stalking, 
+    causing her serious alarm and distress. That man is a dear friend of mine called Drew. 
+    I'm biased and make no effort to sway your opinion. But, you need to hear the truth. 
+    Attend the trail and judge for yourself.:</p> </header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="files.html">Files</a>
+</nav>
+
+<main>
+
+  <article class="post">
+    <h2><a href="posts/post1.html">Case details</a></h2>
+    <div class="post-date">July 27, 2026</div>
+    <p>Details of the trial.</p>
+  </article>
+
+  <article class="post">
+    <h2><a href="posts/post2.html">Summary of the allegation</a></h2>
+    <div class="post-date">July 20, 2026</div>
+    <p>Another preview snippet. Copy this whole &lt;article&gt; block
+    each time you add a new post.</p>
+  </article>
+
+</main>
+
+<footer>
+  &copy; Facts don't care about feelings.
+</footer>
+
+</body>
+</html>
